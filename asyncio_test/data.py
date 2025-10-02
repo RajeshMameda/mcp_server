@@ -5,12 +5,12 @@ from typing import List, Optional
 import uvicorn
 from datetime import datetime
 
-# Initialize FastAPI app
+
 app = FastAPI(title="Async Task API", 
               description="A simple async API example with FastAPI and asyncio",
               version="1.0.0")
 
-# Pydantic model for request/response validation
+
 class Task(BaseModel):
     id: int
     title: str
